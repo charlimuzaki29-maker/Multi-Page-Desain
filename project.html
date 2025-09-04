@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Jekk Muzaki</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Bikin section project jadi flex container */
+    #tentang-teman {
+      display: flex;
+      justify-content: center; /* Bikin isinya ke tengah (horizontal) */
+      align-items: center;     /* Bikin isinya ke tengah (vertikal) */
+      min-height: calc(100vh - 200px); /* Ngasih tinggi minimal biar bisa ke tengah vertikal, 200px itu kira-kira buat header & footer */
+      padding-top: 20px; /* Tambahan padding agar judul tidak terlalu mepet header */
+      padding-bottom: 20px; /* Tambahan padding agar konten tidak terlalu mepet footer */
+    }
+    /* Untuk memastikan judul My Project di tengah dan punya margin yang pas */
+    .project-title-spacing {
+      margin-top: 80px; /* Jarak dari header */
+      margin-bottom: 40px; /* Jarak ke konten kartu */
+      text-align: center; /* Pastikan teks di tengah */
+    }
+  </style>
+  </head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">
+      <img src="hinata.png" alt="Logo">
+      <span>JEKK MUZAKI</span>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+  <main>
+    <h1 class="section-title project-title-spacing">My Project</h1>
+
+    <section id="tentang-teman">
+      <div class="container">
+        <div class="friend-cards">
+            <div class="friend-card">
+            <img src="Windows11.png" alt="Project 2">
+            <h3>Instal Windows 11</h3>
+            <p>How to instal Windows 11 in the VirtualBox</p>
+            <a href="https://youtu.be/daqc4_JMhX4" 
+               target="_blank" class="cta-button modal-video-btn" id="modal-video-btn" style="display: inline-block;">See Tutorial</a>
+          </div>
+          <div class="friend-card">
+            <img src="CalculatorM.png" alt="Project 1">
+            <h3>Calculator</h3>
+            <p>I created a sleek and functional calculator app built from scratch using plain HTML, CSS, and JavaScript.</p>
+            <a href="calculator.html" 
+               target="_blank" class="cta-button modal-video-btn" id="modal-video-btn" style="display: inline-block;">See Tutorial</a>
+          </div>
+          <div class="friend-card">
+            <img src="epep.jpg" alt="Project 3">
+            <h3>Free Fire Game Tutorial</h3>
+            <p>How to use the config application in the Free Fire game</p>
+            <a href="https://youtu.be/m1kCn-T0Saw?si=9GEgAPzq-AJOKXHF" 
+               target="_blank" class="cta-button modal-video-btn" id="modal-video-btn" style="display: inline-block;">See Tutorial</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+                <!-- Back to Home Button -->
+              <div class="back-home">
+            <a href="index.html">⬅ Back to Home</a>
+          </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Jekk Muzaki. All Rights Reserved.</p>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jekk Muzaki - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+  <div class="container">
+    <div class="logo">
+      <img src="hinata.png" alt="Logo">
+      <span>JEKK MUZAKI</span>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <!-- SLIDE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-text">
+        <h2>Hello, I’m <span>Jekk</span></h2>
+        <p>A student with a passion for technology and web design.
+           I'm currently focused on learning and building modern and functional websites.
+           This is a portfolio of my work so far. Interested in a discussion or collaboration?</p>
+        <a href="contact.html" class="cta-button">Contact Me</a>
+      </div>
+      <div class="hero-image">
+        <img src="mukaganteng.jpg" alt="Foto Profil">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Jekk Muzaki. All Rights Reserved.</p>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
